@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мій відпочинок у таборі</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#e5ddff,#fff0f7);
+padding: 25px;
+color: #44375e;
+}
+.container {
+max-width: 600px;
+margin: auto;
+background: white;
+padding: 30px;
+border-radius: 20px;
+box-shadow: 0 5px 20px #bbb;
+}
+h1 {
+text-align: center;
+color: #8063b8;
+}
+label {
+display: block;
+margin-top: 15px;
+font-weight: bold;
+}
+input, select, textarea {
+width: 100%;
+padding: 11px;
+margin-top: 6px;
+border: 1px solid #cbbbe9;
+border-radius: 8px;
+box-sizing: border-box;
+}
+button {
+width: 100%;
+padding: 14px;
+margin-top: 22px;
+background: #8063b8;
+color: white;
+border: none;
+border-radius: 9px;
+font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🏕️ Мій відпочинок у таборі</h1>
+<p>Звіт для моїх батьків</p>
+
+<form action="mailto:your@email.com" method="post" enctype="text/plain">
+
+<label>Ім'я та прізвище:</label>
+<input type="text" name="Ім'я" required>
+
+<label>Назва табору:</label>
+<input type="text" name="Табір">
+
+<label>Дата заповнення:</label>
+<input type="date" name="Дата">
+
+<label>Моє самопочуття:</label>
+<select name="Самопочуття">
+<option>Чудове</option>
+<option>Добре</option>
+<option>Задовільне</option>
+<option>Погане</option>
+</select>
+
+<label>Чи є скарги на здоров'я?</label>
+<select name="Здоров'я">
+<option>Ні, усе добре</option>
+<option>Є невеликі скарги</option>
+<option>Потрібна допомога</option>
+</select>
+
+<label>Як тобі харчування?</label>
+<select name="Харчування">
+<option>Дуже подобається</option>
+<option>Подобається</option>
+<option>Не дуже подобається</option>
+</select>
+
+<label>Чи подобається відпочинок?</label>
+<select name="Відпочинок">
+<option>Так, дуже!</option>
+<option>Так, подобається</option>
+<option>Не дуже</option>
+</select>
+
+<label>Мої улюблені заняття:</label>
+<textarea name="Заняття" rows="3"></textarea>
+
+<label>Повідомлення для батьків:</label>
+<textarea name="Повідомлення" rows="4"></textarea>
+
+<button type="submit">Надіслати батькам 💌</button>
+</form>
+</div>
+</body>
+</html>
